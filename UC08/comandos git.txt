@@ -1,0 +1,26 @@
+git init (para inicializar o controle de versao de um projeto).
+
+rode apenas uma vez esses dois comandos, pois uma vez inserido nome de usuario ele fica no git
+git config --global user.name "seuusuario" 
+git config --global user.email "seuemail" 
+
+verificar se houve alteração na pasta do projeto
+git status
+
+para incluir o arquivo no proximo commit (na proxima versao)
+git add . ou git add nomedoarquivo a incluir
+
+para gerar uma versao
+git commit -m "especificar o que foi alterado"
+
+para verificar as versoes (commits) 
+git log
+
+Para retornar a um commit especifico
+git reset --hard <id do commit> 
+Obs.: para pegar o id do commit, basta rodar um git log
+
+para colocar os arquivos no servidor remoto
+copiar o git remote add origin https://github.com/professorlozano/DMA_T4_DMI_T2.git
+
+git push -u origin main
