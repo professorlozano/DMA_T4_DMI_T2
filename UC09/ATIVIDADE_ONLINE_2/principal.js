@@ -1,7 +1,7 @@
 class Pessoa{
     constructor(pNome, pEndereco){
-        this.Nome = pNome;
-        this.Endereco = pEndereco;
+        this.nome = pNome;
+        this.endereco = pEndereco;
     }
 
     get Nome() { return this.nome};
@@ -19,8 +19,8 @@ class Pessoa{
 class Fisica extends Pessoa{
     constructor(pNome, pEndereco, pCpf, pDtNascimento){
         super(pNome, pEndereco);
-        this.Cpf = pCpf;
-        this.DtNascimento = pDtNascimento;
+        this.cpf = pCpf;
+        this.dtNascimento = pDtNascimento;
     }
 
     get Cpf() { return this.cpf};
@@ -39,8 +39,8 @@ class Fisica extends Pessoa{
 class Juridica extends Pessoa{
     constructor(pNome, pEndereco, pCnpj, pRazaoSocial){
         super(pNome, pEndereco);
-        this.Cnpj = pCnpj;
-        this.RazaoSocial = pRazaoSocial;
+        this.cnpj = pCnpj;
+        this.razaoSocial = pRazaoSocial;
     }
 
     get Cnpj() { return this.cnpj};
@@ -56,11 +56,11 @@ class Juridica extends Pessoa{
     } 
 }
 
-//var pessoa = new Pessoa("Luiz", "Alameda Barao de Limeira");
-//console.log(pessoa.toString());
+var pessoa = new Pessoa("Luiz", "Alameda Barao de Limeira");
+console.log(pessoa.toString());
 
-//var fisica = new Fisica("Joao", "Avenida Rio Branco", "31431431434", "18/05/1984");
-//console.log(fisica.toString());
+var fisica = new Fisica("Joao", "Avenida Rio Branco", "31431431434", "18/05/1984");
+console.log(fisica.toString());
 
 var juridica = new Juridica("Mega Util", "Alameda Araguaia","010009898199292","XX Comercio de Utilidades");
 console.log(juridica.toString());
